@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Speed Monster</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;500&display=swap"
+            rel="stylesheet" />
+    </head>
+
+    <body>
+        <header>
+
+            <button class="blog_btn"><a href="index.html">Start Race</a></button>
+            <h1 class="title"><img src="./logo.png" /></h1>
+            <button class="blog_btn"><a class="active" href="#">Our Blog</a></button>
+        </header>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="blogline"></div>
+        <br>
+        <br>
+        <br>
+        <div id="Blog_histories">
+
+            <div class="blogCard">
+                <h1 class="blog_q"> Q1: What is difference Between Local Storage & Session Storage? </h1>
+                <p class="blog_ans">SessionStorage is similar to localStorage. The difference is that while data in
+                    localStorage doesn't expire, data in sessionStorage is cleared when the page session ends. Whenever
+                    a document is loaded in a particular tab in the browser, a unique page session gets created and
+                    assigned to that particular tab. But the Local Storage remins same as before.</p>
+            </div>
+            <div class="blogCard">
+                <h1 class="blog_q"> Q2: What is difference Between Global Scope & Block Scope? </h1>
+                <p class="blog_ans">Global Scope like var is worked globaly in the code. But the Block Scope let, const
+                    only works on that particular block like (if, else if, else or switch, all kind of loops) it can't
+                    be called or change outside of the block. On the other hand var can be called from anywhere in the
+                    programe which is Global Scope.</p>
+            </div>
+            <div class="blogCard">
+                <h1 class="blog_q"> Q3: How does event loop works in javaScript? </h1>
+                <p class="blog_ans">The event loop is a process that waits for the Call Stack to be clear before pushing
+                    callbacks from the Task Queue to the Call Stack. Once the Stack is clear, the event loop triggers
+                    and checks the Task Queue for available callbacks.</p>
+            </div>
+            <div class="blogCard">
+                <h1 class="blog_q"> Q4: How many ways you will get undefined in JavaScript? </h1>.
+                <p class="blog_ans">When a variable is declared or initialized but no value is assigned to it,
+                    JavaScript automatically displays "undefined". It looks like this: <br><br>
+                <p> <code
+                        style="color:rgb(78, 183, 248);font-size:25px; border-left: 1px solid rgb(78, 183, 248); padding-left: 40px; ">
+            let myStr;
+            console.log(myStr); // undefined
+            </code></p>
+                <br>
+                <br>
+                Also, when we try accessing values in, for example, an array or object that doesn't exist, it will
+                throw undefined.
+                <br>
+                <br>
+                <code
+                    style="color:rgb(78, 183, 248);font-size:25px; border-left: 1px solid rgb(78, 183, 248); padding-left: 40px;">
+            let user = {
+            name: "John Doe",
+            age: 14
+            };
+            console.log(user.hobby); // undefined
+            <br>
+            <br>
+            
+            <b style="color:white;">Here's another example:</b>
+            <br>
+            
+            let myArr = [12, 33, 44];
+            console.log(myArr[7]); // undefined
+            
+            <br>
+            <br>
+            <b style="color:white;">Void undefined:</b> 
+            <br>
+            
+            console.log(void 0); // undefined
+            console.log(void(0)); // undefined </code>
+                </p>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <!-- <script src="./history.js"></script>
+    <script src="./script.js"></script> -->
+    </body>
+
+</html>
